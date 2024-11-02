@@ -99,7 +99,7 @@ Response Code: 200
 
 ## 📄 Resultados y Funcionalidades
 
-Cada ejecución del plugin imprime el código de respuesta HTTP en la consola. Esto permite verificar rápidamente el éxito o fallo de la solicitud enviada. Para pruebas, se recomienda usar [JSONPlaceholder](https://jsonplaceholder.typicode.com/) u otros servicios de prueba de API.
+Cada ejecución del plugin imprime el código de respuesta HTTP en la consola. Esto permite verificar rápidamente el éxito o fallo de la solicitud enviada. Para pruebas, se recomienda usar [JSONPlaceholder](https://jsonplaceholder.typicode.com/)  de prueba de API.
 
 ---
 
