@@ -112,11 +112,3 @@ Cada ejecución del plugin imprime el código de respuesta HTTP en la consola. E
   - Código 500: Error del servidor.
 
 ---
-
-## 🎉 Contribución
-
-¡Siempre se agradecen contribuciones para mejorar este plugin! Si deseas agregar más funcionalidades o mejorar la documentación, no dudes en hacer un fork y un pull request.
-
----
-
-**¡Gracias por utilizar HttpNotificationPlugin!** 🎈
