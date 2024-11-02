@@ -16,7 +16,7 @@ El **HttpNotificationPlugin** fue diseñado para simplificar el envío de notifi
 ### 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu_usuario/HttpNotificationPlugin.git
+git clone https://github.com/sanjaygrr/HttpNotificationPlugin.git
 cd HttpNotificationPlugin
 ```
 
