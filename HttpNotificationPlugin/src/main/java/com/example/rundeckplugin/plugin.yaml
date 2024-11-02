@@ -1,0 +1,28 @@
+name: HttpNotificationPlugin
+service: Notification
+plugin-type: http-notification
+
+config:
+  - key: httpMethod
+    title: HTTP Method
+    description: "Select the HTTP method to use (GET, POST, PUT, DELETE)"
+    required: true
+    type: String
+
+  - key: contentType
+    title: Content Type
+    description: "Content-Type of the HTTP request (e.g., application/json)"
+    required: true
+    type: String
+
+  - key: requestBody
+    title: Request Body
+    description: "Body content of the HTTP request, applicable for POST and PUT methods"
+    required: false
+    type: String
+
+  - key: url
+    title: URL
+    description: "The endpoint URL to send the notification"
+    required: true
+    type: String
