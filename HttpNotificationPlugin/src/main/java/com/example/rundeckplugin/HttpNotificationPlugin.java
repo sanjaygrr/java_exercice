@@ -16,7 +16,6 @@ public class HttpNotificationPlugin {
     private String requestBody;
     private String url;
 
-    // Constructor para inicializar los valores de la solicitud
     public HttpNotificationPlugin(String httpMethod, String contentType, String requestBody, String url) {
         this.httpMethod = httpMethod;
         this.contentType = contentType;
@@ -24,22 +23,20 @@ public class HttpNotificationPlugin {
         this.url = url;
     }
 
-    // Método principal para enviar la solicitud HTTP
     public void sendNotification() throws IOException {
-        // Crear el cliente HTTP
+
         try (CloseableHttpClient client = HttpClients.createDefault()) {
             HttpRequestBase request = createHttpRequest();
 
-            // Configurar el encabezado de tipo de contenido
+
             request.setHeader("Content-Type", contentType);
 
-            // Ejecutar la solicitud y obtener la respuesta
+
             HttpResponse response = client.execute(request);
             System.out.println("Response Code: " + response.getStatusLine().getStatusCode());
         }
     }
 
-    // Método para crear la solicitud HTTP según el método especificado
     private HttpRequestBase createHttpRequest() throws UnsupportedEncodingException {
         switch (httpMethod.toUpperCase()) {
             case "POST":
@@ -59,7 +56,6 @@ public class HttpNotificationPlugin {
         }
     }
 
-    // Método main para iniciar el JAR ejecutable
     public static void main(String[] args) {
         if (args.length < 4) {
             System.out.println(

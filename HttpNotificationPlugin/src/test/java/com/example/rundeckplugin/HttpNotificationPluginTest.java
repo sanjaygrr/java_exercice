@@ -12,7 +12,6 @@ public class HttpNotificationPluginTest {
         HttpNotificationPlugin plugin = new HttpNotificationPlugin("POST", "application/json", "{\"key\":\"value\"}",
                 "http://example.com");
         plugin.sendNotification();
-        // Agregar aserciones para validar el resultado, como una respuesta HTTP 200 OK
     }
 
     @Test
@@ -20,7 +19,6 @@ public class HttpNotificationPluginTest {
         HttpNotificationPlugin plugin = new HttpNotificationPlugin("GET", "application/json", null,
                 "http://example.com");
         plugin.sendNotification();
-        // Agregar aserciones para validar el resultado
     }
 
     @Test
@@ -28,7 +26,6 @@ public class HttpNotificationPluginTest {
         HttpNotificationPlugin plugin = new HttpNotificationPlugin("PUT", "application/json", "{\"key\":\"updated\"}",
                 "http://example.com");
         plugin.sendNotification();
-        // Agregar aserciones para validar el resultado
     }
 
     @Test
@@ -36,7 +33,6 @@ public class HttpNotificationPluginTest {
         HttpNotificationPlugin plugin = new HttpNotificationPlugin("DELETE", "application/json", null,
                 "http://example.com");
         plugin.sendNotification();
-        // Agregar aserciones para validar el resultado
     }
 
     @Test
